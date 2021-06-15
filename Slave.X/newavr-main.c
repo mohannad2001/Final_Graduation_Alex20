@@ -2,7 +2,10 @@
 #define F_CPU 16000000UL
 
 #include <avr/io.h>
-#include "ALL.h"
+#include "INOUT.h"
+#include "LCD.h"
+#include "SPI.h"
+#include "UART.h"
 #include <avr/interrupt.h>
 #include <avr/iom32a.h>
 #include <util/delay.h>
