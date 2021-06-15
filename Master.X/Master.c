@@ -1,7 +1,9 @@
 
 
 #define F_CPU 16000000UL
-#include "final_header.h"
+#include "SPI.h"
+#include "UART.h"
+#include "LCD.h"
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>
@@ -26,7 +28,7 @@ int main(void) {
     SPI_init(Master, f_128);
     SPI_enable();
 
-
+    
     while (1) {
 
         data = UART_recieve();
